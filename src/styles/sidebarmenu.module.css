@@ -31,6 +31,7 @@
   list-style: none;
   padding: 15px 0;
   padding-left: 48px;
+  text-transform: capitalize;
 }
 
 .wrapper li:hover {
