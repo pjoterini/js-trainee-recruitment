@@ -1,12 +1,9 @@
 import { AnimalProps } from "@/pages";
-import React, { forwardRef, LegacyRef } from "react";
 
-export const Link = forwardRef(
-  ({ header }: AnimalProps, ref: LegacyRef<HTMLAnchorElement> | undefined) => {
-    return (
-      <a ref={ref} href={`#${header}`}>
-        <li>{header}</li>
-      </a>
-    );
-  }
-);
+export const Link = ({ header, active }: AnimalProps & { active: boolean }) => {
+  return (
+    <a href={`#${header}`}>
+      <li style={active ? { color: "red" } : undefined}>{header}</li>
+    </a>
+  );
+};
