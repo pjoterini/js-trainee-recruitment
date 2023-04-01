@@ -275,6 +275,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/throttle-debounce@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@types/throttle-debounce@npm:5.0.0"
+  checksum: f0b1f626816154466a6c7699fa9a87614f2b65c649654d02456e3603c38c29457b40d26c2ac820c2c44574e92f210c21b0cdce747b578d27566d5faa1daaae7e
+  languageName: node
+  linkType: hard
+
+"@types/uuid@npm:^9.0.1":
+  version: 9.0.1
+  resolution: "@types/uuid@npm:9.0.1"
+  checksum: c472b8a77cbeded4bc529220b8611afa39bd64677f507838f8083d8aac8033b1f88cb9ddaa2f8589e0dcd2317291d0f6e1379f82d5ceebd6f74f3b4825288e00
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/parser@npm:^5.42.0":
   version: 5.54.1
   resolution: "@typescript-eslint/parser@npm:5.54.1"
@@ -1978,6 +1992,8 @@ __metadata:
     "@types/node": 18.15.0
     "@types/react": 18.0.28
     "@types/react-dom": 18.0.11
+    "@types/throttle-debounce": ^5.0.0
+    "@types/uuid": ^9.0.1
     eslint: 8.35.0
     eslint-config-next: 13.2.4
     html-react-parser: ^3.0.15
@@ -1985,7 +2001,9 @@ __metadata:
     prettier: ^2.8.4
     react: 18.2.0
     react-dom: 18.2.0
+    throttle-debounce: ^5.0.0
     typescript: 4.9.5
+    uuid: ^9.0.0
   languageName: unknown
   linkType: soft
 
@@ -2702,6 +2720,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"throttle-debounce@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "throttle-debounce@npm:5.0.0"
+  checksum: aa8bf25828b4f8645ce863589de05d6807ea3debc147ce7d89624638ff8a16792d6d0baa0f8a32a260f0b163444d74020c6087b713ae561fde594b97b6e51f28
+  languageName: node
+  linkType: hard
+
 "tiny-glob@npm:^0.2.9":
   version: 0.2.9
   resolution: "tiny-glob@npm:0.2.9"
@@ -2823,6 +2848,15 @@ __metadata:
   dependencies:
     punycode: ^2.1.0
   checksum: 7167432de6817fe8e9e0c9684f1d2de2bb688c94388f7569f7dbdb1587c9f4ca2a77962f134ec90be0cc4d004c939ff0d05acc9f34a0db39a3c797dada262633
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "uuid@npm:9.0.0"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: 8dd2c83c43ddc7e1c71e36b60aea40030a6505139af6bee0f382ebcd1a56f6cd3028f7f06ffb07f8cf6ced320b76aea275284b224b002b289f89fe89c389b028
   languageName: node
   linkType: hard
 

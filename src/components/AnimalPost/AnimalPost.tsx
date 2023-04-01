@@ -1,9 +1,9 @@
-import { AnimalProps } from "@/pages";
+import { AnimalProps } from "@/mock";
 import parse from "html-react-parser";
 import { forwardRef, LegacyRef } from "react";
-import styles from "../styles/menuitem.module.css";
+import styles from "./animalPost.module.css";
 
-export const MenuItem = forwardRef(
+export const AnimalPost = forwardRef(
   (
     { header, text, img }: AnimalProps,
     ref: LegacyRef<HTMLElement> | undefined
