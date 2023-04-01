@@ -4,7 +4,6 @@ import { SidebarLink } from "@/components/Sidebar/SidebarLink";
 import { animals } from "@/mock";
 import { useEffect, useRef } from "react";
 import { throttle } from "throttle-debounce";
-import { v4 as uuid } from "uuid";
 
 export default function Home() {
   const cardRefs = useRef<Array<HTMLElement | null>>([]);
@@ -22,19 +21,15 @@ export default function Home() {
 
     linkRefs.current.forEach((link) => {
       link?.children[0].classList.remove("active");
-      if (link?.attributes[0].value.includes(current!)) {
+      if (current && link?.attributes[0].value.includes(current)) {
         link?.children[0].classList.add("active");
       }
     });
   };
 
-  const throttleHighlightCurrentAnimal = throttle(200, () => {
-    highlightCurrentAnimal();
-  });
+  const throttleHighlightCurrentAnimal = throttle(200, highlightCurrentAnimal);
 
   useEffect(() => {
-    console.log(cardRefs.current);
-    console.log(linkRefs.current);
     window.addEventListener("scroll", throttleHighlightCurrentAnimal);
 
     return () => {
@@ -49,7 +44,7 @@ export default function Home() {
           {animals.map((link, idx) => {
             return (
               <SidebarLink
-                key={uuid()}
+                key={link.uuid}
                 ref={(ref) => (linkRefs.current[idx] = ref)}
                 header={link.header}
                 text={link.text}
@@ -62,7 +57,7 @@ export default function Home() {
           {animals.map((card, idx) => {
             return (
               <AnimalPost
-                key={uuid()}
+                key={card.uuid}
                 ref={(ref) => (cardRefs.current[idx] = ref)}
                 header={card.header}
                 text={card.text}
