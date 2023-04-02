@@ -1,0 +1,40 @@
+.wrapper {
+  background-color: white;
+  height: 500px;
+  width: 318px;
+  margin: 48px 0 0 100px;
+  position: sticky;
+  top: 48px;
+}
+
+.wrapper h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #000000;
+  padding-top: 24px;
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.ul {
+  padding-inline-start: 0;
+}
+
+.wrapper li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 132%;
+  color: #71717a;
+  list-style: none;
+  padding: 15px 0;
+  padding-left: 48px;
+  text-transform: capitalize;
+}
+
+.wrapper li:hover {
+  background: #fafafa;
+  color: #f97316;
+}
